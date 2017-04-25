@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee9c35122abd23458ddb18edd496d6a, type: 3}
+  m_Name: UFPSItemDatabase
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11461994, guid: b5a7bd9661e58d3428fac661476e1493, type: 2}
+  - {fileID: 11411346, guid: c6ace3cf61dfb5a42aa8853970525f0a, type: 2}
+  - {fileID: 11449258, guid: 7b49b5bcdd1d61348a9a8d1365e6191f, type: 2}
+  - {fileID: 11405266, guid: 31e2bdb4deeafd848a3bce7919f899a4, type: 2}
+  itemRaritys:
+  - ID: 0
+    name: Normal
+    color: {r: 1, g: 1, b: 1, a: 1}
+    dropObject: {fileID: 0}
+  - ID: 1
+    name: Rare
+    color: {r: 0, g: 0.7103448, b: 1, a: 1}
+    dropObject: {fileID: 0}
+  - ID: 2
+    name: Epic
+    color: {r: 1, g: 0.72413796, b: 0, a: 1}
+    dropObject: {fileID: 0}
+  itemCategories:
+  - ID: 0
+    name: None
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  - ID: 1
+    name: Melee weapons
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  - ID: 2
+    name: Rifles
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  - ID: 3
+    name: Pistols
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  - ID: 4
+    name: Ammo
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  properties: []
+  equipStats:
+  - name: 
+    category: Default
+    typeName: EquippableUFPSInventoryItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    fieldInfoName: _category
+    fieldInfoNameVisual: EquippableUFPSInventoryItem._category
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: Devdog.InventorySystem.Integration.UFPS.EquippableUFPSInventoryItem,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _rarity
+    fieldInfoNameVisual: EquippableUFPSInventoryItem._rarity
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: EquippableUFPSInventoryItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    fieldInfoName: _category
+    fieldInfoNameVisual: EquippableInventoryItem._category
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: Devdog.InventorySystem.Integration.UFPS.EquippableUFPSInventoryItem,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _rarity
+    fieldInfoNameVisual: EquippableInventoryItem._rarity
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: EquippableUFPSInventoryItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    fieldInfoName: _category
+    fieldInfoNameVisual: InventoryItemBase._category
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: Weight
+    category: Misc
+    typeName: EquippableUFPSInventoryItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    fieldInfoName: _weight
+    fieldInfoNameVisual: InventoryItemBase._weight
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: EquippableUFPSInventoryItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    fieldInfoName: _requiredLevel
+    fieldInfoNameVisual: InventoryItemBase._requiredLevel
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: EquippableUFPSInventoryItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    fieldInfoName: _rarity
+    fieldInfoNameVisual: InventoryItemBase._rarity
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: EquippableUFPSInventoryItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    fieldInfoName: _buyPrice
+    fieldInfoNameVisual: InventoryItemBase._buyPrice
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: EquippableUFPSInventoryItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    fieldInfoName: _sellPrice
+    fieldInfoNameVisual: InventoryItemBase._sellPrice
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  equipStatTypes:
+  - Devdog.InventorySystem.Integration.UFPS.EquippableUFPSInventoryItem, Assembly-CSharp,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  equipTypes:
+  - ID: 0
+    name: Rifle
+    blockTypes: 06000000
+  - ID: 1
+    name: Pistol
+    blockTypes: 06000000
+  - ID: 2
+    name: Melee weapons
+    blockTypes: 0600000007000000
+  - ID: 3
+    name: Helmet
+    blockTypes: 
+  - ID: 4
+    name: Body
+    blockTypes: 
+  - ID: 5
+    name: Boots
+    blockTypes: 
+  - ID: 6
+    name: Sniper
+    blockTypes: 000000000100000002000000
+  - ID: 7
+    name: Small rounds
+    blockTypes: 02000000
+  craftingCategories:
+  - ID: 0
+    name: Test crafting
+    description: 
+    alsoScanBankForRequiredItems: 1
+    forceSaveInCollection: {fileID: 0}
+    rows: 3
+    cols: 3
+    blueprints: []

@@ -1,0 +1,280 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee9c35122abd23458ddb18edd496d6a, type: 3}
+  m_Name: plyGameItemDatabase
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11494040, guid: b099ca71457073d4f87208989a5dfb0f, type: 2}
+  - {fileID: 11480922, guid: 7d3484053ad7dbb4cad88234bd7567b5, type: 2}
+  - {fileID: 11485604, guid: 07bff0872f707c947a408a68f186d22a, type: 2}
+  - {fileID: 11456720, guid: 7353c7efc16c4384bbf59590e2062cae, type: 2}
+  itemRaritys:
+  - ID: 0
+    name: Junk
+    color: {r: 0.5441177, g: 0.5441177, b: 0.5441177, a: 1}
+    dropObject: {fileID: 0}
+  - ID: 1
+    name: Normal
+    color: {r: 1, g: 1, b: 1, a: 1}
+    dropObject: {fileID: 0}
+  - ID: 2
+    name: Uncommon
+    color: {r: 0.4068966, g: 1, b: 0, a: 1}
+    dropObject: {fileID: 0}
+  - ID: 3
+    name: Rare
+    color: {r: 0, g: 0.64117634, b: 0.85294116, a: 1}
+    dropObject: {fileID: 0}
+  - ID: 4
+    name: Epic
+    color: {r: 1, g: 0.6413793, b: 0, a: 1}
+    dropObject: {fileID: 0}
+  itemCategories:
+  - ID: 0
+    name: None
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  - ID: 1
+    name: Cloth
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  - ID: 2
+    name: Potions
+    cooldownTime: 10
+    _onlyAllowTypes: []
+  - ID: 3
+    name: Food
+    cooldownTime: 20
+    _onlyAllowTypes: []
+  - ID: 4
+    name: Swords
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  properties:
+  - ID: 1
+    key: Test Property
+    value: 123
+    showInUI: 1
+    uiColor: {r: 1, g: 0, b: 0, a: 1}
+  - ID: 0
+    key: My custom property
+    value: 12554
+    showInUI: 1
+    uiColor: {r: 1, g: 0, b: 0, a: 1}
+  equipStats:
+  - name: 
+    category: Default
+    typeName: Devdog.InventorySystem.EquippableInventoryItem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _category
+    fieldInfoNameVisual: EquippableInventoryItem._category
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: Devdog.InventorySystem.EquippableInventoryItem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _rarity
+    fieldInfoNameVisual: EquippableInventoryItem._rarity
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: Devdog.InventorySystem.EquippableInventoryItem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _category
+    fieldInfoNameVisual: InventoryItemBase._category
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: Weight
+    category: Gear
+    typeName: Devdog.InventorySystem.EquippableInventoryItem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _weight
+    fieldInfoNameVisual: InventoryItemBase._weight
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: Item level
+    category: Gear
+    typeName: Devdog.InventorySystem.EquippableInventoryItem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _requiredLevel
+    fieldInfoNameVisual: InventoryItemBase._requiredLevel
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: Devdog.InventorySystem.EquippableInventoryItem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _rarity
+    fieldInfoNameVisual: InventoryItemBase._rarity
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: Devdog.InventorySystem.EquippableInventoryItem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _buyPrice
+    fieldInfoNameVisual: InventoryItemBase._buyPrice
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: Default
+    typeName: Devdog.InventorySystem.EquippableInventoryItem, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    fieldInfoName: _sellPrice
+    fieldInfoNameVisual: InventoryItemBase._sellPrice
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  equipStatTypes:
+  - Devdog.InventorySystem.EquippableInventoryItem, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  equipTypes:
+  - ID: 0
+    name: Head
+    blockTypes: 
+  - ID: 1
+    name: Necklace
+    blockTypes: 
+  - ID: 2
+    name: Ring
+    blockTypes: 
+  - ID: 3
+    name: Boots
+    blockTypes: 
+  - ID: 4
+    name: Body
+    blockTypes: 
+  - ID: 5
+    name: Shield
+    blockTypes: 060000000800000009000000
+  - ID: 6
+    name: Dagger
+    blockTypes: 07000000080000000900000005000000
+  - ID: 7
+    name: 1H Sword
+    blockTypes: 080000000900000006000000
+  - ID: 8
+    name: 2H Sword
+    blockTypes: 06000000070000000900000005000000
+  - ID: 9
+    name: 2H Axe
+    blockTypes: 08000000070000000600000005000000
+  - ID: 10
+    name: Gloves
+    blockTypes: 
+  - ID: 11
+    name: Earring
+    blockTypes: 
+  craftingCategories:
+  - ID: 0
+    name: Blacksmithing
+    description: 
+    alsoScanBankForRequiredItems: 0
+    forceSaveInCollection: {fileID: 0}
+    rows: 3
+    cols: 3
+    blueprints:
+    - ID: 1
+      indexInCategory: 0
+      useItemResultNameAndDescription: 1
+      customName: 
+      customDescription: 
+      requiredItems:
+      - item: {fileID: 11494040, guid: b099ca71457073d4f87208989a5dfb0f, type: 2}
+        amount: 1
+      playerLearnedBlueprint: 0
+      craftCostPrice: 5
+      successChanceFactor: 1
+      itemResult: {fileID: 11485604, guid: 07bff0872f707c947a408a68f186d22a, type: 2}
+      itemResultCount: 1
+      craftingTimeDuration: 3
+      craftingTimeSpeedupFactor: 1.1
+      craftingTimeSpeedupMax: 5
+      blueprintLayouts:
+      - ID: 0
+        enabled: 1
+        rows:
+        - index: 0
+          columns:
+          - index: 0
+            item: {fileID: 0}
+            amount: 0
+          - index: 1
+            item: {fileID: 0}
+            amount: 0
+          - index: 2
+            item: {fileID: 0}
+            amount: 0
+        - index: 1
+          columns:
+          - index: 0
+            item: {fileID: 11476484, guid: 4f6c5d3910c9f024c8df75227f0ed4f3, type: 2}
+            amount: 1
+          - index: 1
+            item: {fileID: 11476484, guid: 4f6c5d3910c9f024c8df75227f0ed4f3, type: 2}
+            amount: 1
+          - index: 2
+            item: {fileID: 11476484, guid: 4f6c5d3910c9f024c8df75227f0ed4f3, type: 2}
+            amount: 1
+        - index: 2
+          columns:
+          - index: 0
+            item: {fileID: 0}
+            amount: 0
+          - index: 1
+            item: {fileID: 0}
+            amount: 0
+          - index: 2
+            item: {fileID: 0}
+            amount: 0
+    - ID: 2
+      indexInCategory: 0
+      useItemResultNameAndDescription: 0
+      customName: Axe 2
+      customDescription: Super epic axe
+      requiredItems:
+      - item: {fileID: 11494040, guid: b099ca71457073d4f87208989a5dfb0f, type: 2}
+        amount: 1
+      playerLearnedBlueprint: 1
+      craftCostPrice: 1
+      successChanceFactor: 1
+      itemResult: {fileID: 11485604, guid: 07bff0872f707c947a408a68f186d22a, type: 2}
+      itemResultCount: 1
+      craftingTimeDuration: 0
+      craftingTimeSpeedupFactor: 1
+      craftingTimeSpeedupMax: 1
+      blueprintLayouts: []
+  - ID: 1
+    name: Cooking
+    description: 
+    alsoScanBankForRequiredItems: 1
+    forceSaveInCollection: {fileID: 0}
+    rows: 3
+    cols: 3
+    blueprints:
+    - ID: 0
+      indexInCategory: 0
+      useItemResultNameAndDescription: 1
+      customName: 
+      customDescription: 
+      requiredItems:
+      - item: {fileID: 11494040, guid: b099ca71457073d4f87208989a5dfb0f, type: 2}
+        amount: 2
+      playerLearnedBlueprint: 1
+      craftCostPrice: 0
+      successChanceFactor: 1
+      itemResult: {fileID: 11485604, guid: 07bff0872f707c947a408a68f186d22a, type: 2}
+      itemResultCount: 1
+      craftingTimeDuration: 0
+      craftingTimeSpeedupFactor: 1
+      craftingTimeSpeedupMax: 1
+      blueprintLayouts: []

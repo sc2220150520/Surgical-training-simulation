@@ -1,0 +1,12 @@
+{
+	"publisher_id": 0,
+	"publisher_package_id": 3638,
+	"title": "SilverLining Skies & 3D Clouds",
+	"description": "<br>\n<p>Add <strong>physically based procedural skies</strong> and <strong>real 3D volumetric clouds</strong> you can fly through to your scenes in under a minute. SilverLining for Unity brings you the most popular features of the <a href=\"http://www.sundog-soft.com/\">SilverLining C++ SDK</a>, used extensively in commercial games and serious simulations, at a fraction of the price. </p>\n<br>\n<p>Specify any time, location, and cloud conditions, and SilverLining does the rest automatically.</p>\n<br>\n<p>Check out our <a href=\"http://www.youtube.com/watch?v=Q_BNVKGkue4\">tutorial video</a> and <a href=\"http://cdn.sundog-soft.com/UnitySilverLiningWeb/WebPlayer/WebPlayer.html\">web player</a> to see SilverLining for Unity in action!</p>",
+	"changes": "Initial release.",
+	"version_name": "1.0",
+	"category": 117,
+	"price": "275",
+	"recommended_features": [],
+	"required_features": []
+}
