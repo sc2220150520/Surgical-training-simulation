@@ -6,6 +6,7 @@ using Mono.Data.Sqlite;
 using System;
 using System.Data;
 using System.Threading;
+using UnityEngine.UI;
 
 public class SCTeacher : MonoBehaviour {
 
@@ -16,8 +17,14 @@ public class SCTeacher : MonoBehaviour {
     private int index = 0;
     private SpVoice voice;
     private Thread th;
+    public GameObject teacherText;
+    public GameObject teacherImage;
+    //主线程要做的事情
+    private List<Action> action;
     // Use this for initialization
     void Start () {
+       teacherImage.active = true;
+       
         ordersArry = new List<Operation.Order>();
         getDataFromDataBase();
 
@@ -27,7 +34,7 @@ public class SCTeacher : MonoBehaviour {
         myTimer.Enabled = true; //定时器开始用
                                 //Control.CheckForIllegalCrossThreadCalls = false;
 
-        
+        action = new List<Action>();
     }
 //得到数据从数据库
     void getDataFromDataBase()
@@ -71,6 +78,7 @@ public class SCTeacher : MonoBehaviour {
     //计时器的操作
     void myTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
     {
+        action.Add(actionEvent);
         if (th != null)
         {
             th.Abort();
@@ -86,7 +94,13 @@ public class SCTeacher : MonoBehaviour {
         voice = new SpVoice();
         //获取语音库
         voice.Voice = voice.GetVoices(string.Empty, string.Empty).Item(0);
-        voice.Speak("请" + ordersArry[index].o_handleName);
+        voice.Speak("请" + ordersArry[index].o_handleName);   
+    }
+
+    private void actionEvent()
+    {
+        teacherText.active = true;
+        teacherText.transform.FindChild("Text").gameObject.GetComponent<Text>().text = "请" + ordersArry[index].o_handleName;
     }
 
     //释放定时器
@@ -114,6 +128,7 @@ public class SCTeacher : MonoBehaviour {
             {
                 Debug.Log("声音暂停");
                 voice.Pause();
+                teacherText.active = false;
             }
             //Stop();   
         }
@@ -126,8 +141,27 @@ public class SCTeacher : MonoBehaviour {
     }
 
     void Update () {
-		
-	}
+
+        lock (action)
+        {
+            if (action.Count != 0)
+            {
+                foreach (var it in action)
+                    it();
+            }
+            action.Clear();
+        }
+
+        if (voice != null)
+        {
+            if (voice.Status.RunningState == SpeechRunState.SRSEDone)
+            {
+                if (teacherText.active)
+                    teacherText.active = false;
+            }
+        }
+
+    }
     private void FixedUpdate()
     {
         if (index > ordersArry.Count-1)
